@@ -4,7 +4,6 @@ import (
 	_ "embed"
 	"fmt"
 	"log"
-	"math/rand"
 	"os"
 	"time"
 
@@ -37,7 +36,6 @@ func (date *GameTime) UnmarshalCSV(csv string) (err error) {
 
 func main() {
 	token := os.Getenv("TELEGRAM_TOKEN")
-	rand.Seed(0)
 
 	allGames := []Game{}
 	if err := gocsv.UnmarshalBytes(rawGames, &allGames); err != nil {

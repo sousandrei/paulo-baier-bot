@@ -1,0 +1,38 @@
+version: '3'
+
+vars:
+  VERSION:
+    sh: git rev-parse --short HEAD
+
+tasks:
+  default:
+    cmds:
+      - task: build
+
+  version:
+    cmds:
+      - echo "{{.VERSION}}"
+
+  build: 
+    cmds:
+      - go build -o build/pbb cmd/main.go
+    env:
+      CGO_ENABLED: 0
+
+  docker-build:
+    cmds:
+      - docker build -t pbb:{{.VERSION}} .
+
+  docker-push:
+    cmds:
+      - docker tag pbb:{{.VERSION}}
+        -t github.com/sousandrei/paulo-baier-bot:{{.VERSION}}
+      - docker push github.com/sousandrei/paulo-baier-bot:{{.VERSION}}
+
+  docker-run:
+    cmds:
+      - task: docker-build
+      - docker container run 
+        -e TELEGRAM_TOKEN={{.TELEGRAM_TOKEN}}
+        --rm
+        pbb:{{.VERSION}} 
