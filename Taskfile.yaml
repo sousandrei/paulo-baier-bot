@@ -9,6 +9,10 @@ tasks:
     cmds:
       - task: build
 
+  run:
+    cmds:
+      - go run cmd/main.go
+
   version:
     cmds:
       - echo "{{.VERSION}}"
@@ -25,9 +29,9 @@ tasks:
 
   docker-push:
     cmds:
-      - docker tag pbb:{{.VERSION}}
-        -t github.com/sousandrei/paulo-baier-bot:{{.VERSION}}
-      - docker push github.com/sousandrei/paulo-baier-bot:{{.VERSION}}
+      - task: docker-build
+      - docker tag pbb:{{.VERSION}} ghcr.io/sousandrei/paulo-baier-bot:{{.VERSION}}
+      - docker push ghcr.io/sousandrei/paulo-baier-bot:{{.VERSION}}
 
   docker-run:
     cmds:

@@ -3,7 +3,6 @@ package main
 import (
 	_ "embed"
 	"fmt"
-	"log"
 	"os"
 	"time"
 
@@ -39,15 +38,15 @@ func main() {
 
 	allGames := []Game{}
 	if err := gocsv.UnmarshalBytes(rawGames, &allGames); err != nil {
-		log.Panic(err)
+		fmt.Println("Error unmarshalling games.csv", err)
 	}
 
 	bot, err := tgbotapi.NewBotAPI(token)
 	if err != nil {
-		log.Panic(err)
+		fmt.Println("Error creating bot", err)
 	}
 
-	log.Printf("Authorized on account %s", bot.Self.UserName)
+	fmt.Println("Authorized on account", bot.Self.UserName)
 
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 60
@@ -79,7 +78,7 @@ func main() {
 			if game == nil {
 				msg.Text = "No more games"
 				if _, err := bot.Send(msg); err != nil {
-					log.Panic(err)
+					fmt.Println("Error sending message:", err)
 				}
 
 				continue
@@ -100,7 +99,7 @@ func main() {
 			msg.ParseMode = "markdown"
 
 			if _, err := bot.Send(msg); err != nil {
-				log.Panic(err)
+				fmt.Println("Error sending message:", err)
 			}
 		}
 
