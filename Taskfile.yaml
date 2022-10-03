@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 vars:
   VERSION:
@@ -17,11 +17,15 @@ tasks:
     cmds:
       - echo "{{.VERSION}}"
 
-  build: 
+  build:
     cmds:
       - go build -o build/pbb cmd/main.go
     env:
       CGO_ENABLED: 0
+
+  lint:
+    cmds:
+      - golangci-lint run
 
   docker-build:
     cmds:
@@ -36,7 +40,7 @@ tasks:
   docker-run:
     cmds:
       - task: docker-build
-      - docker container run 
+      - docker container run
         -e TELEGRAM_TOKEN={{.TELEGRAM_TOKEN}}
         --rm
-        pbb:{{.VERSION}} 
+        pbb:{{.VERSION}}
