@@ -1,68 +1,40 @@
 package bot
 
 import (
-	_ "embed"
 	"fmt"
 	"os"
 	"time"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"github.com/gocarina/gocsv"
+	"github.com/sousandrei/paulobaierbot/internal/games"
 )
-
-// =================================================
-// TODO: separate
-
-//go:embed games.csv
-var rawGames []byte
-
-type Game struct {
-	Date     GameTime `csv:"Date"`
-	Team1    string   `csv:"Team 1"`
-	Match    string   `csv:"Match"`
-	Team2    string   `csv:"Team 2"`
-	Group    string   `csv:"Group"`
-	Location string   `csv:"Location"`
-	Stage    string   `csv:"Stage"`
-	Place    string   `csv:"Place"`
-}
-
-type GameTime struct {
-	time.Time
-}
-
-func (date *GameTime) UnmarshalCSV(csv string) (err error) {
-	date.Time, err = time.Parse("2-Jan-06 3:04 PM", csv)
-	return err
-}
-
-// =================================================
 
 type Client struct {
 	bot   *tgbotapi.BotAPI
-	games []Game
+	games []games.Game
 }
 
-func New() *Client {
+func New() (*Client, error) {
 	//TODO: receive conf
 	token := os.Getenv("TELEGRAM_TOKEN")
 
 	bot, err := tgbotapi.NewBotAPI(token)
 	if err != nil {
-		fmt.Println("Error creating bot", err)
+		return nil, fmt.Errorf("error creating bot from api: %w", err)
 	}
 
+	// TODO: better logging
 	fmt.Println("Authorized on account", bot.Self.UserName)
 
-	allGames := []Game{}
-	if err := gocsv.UnmarshalBytes(rawGames, &allGames); err != nil {
-		fmt.Println("Error unmarshalling games.csv", err)
+	games, err := games.GetGames()
+	if err != nil {
+		return nil, fmt.Errorf("error getting games: %w", err)
 	}
 
 	return &Client{
 		bot:   bot,
-		games: allGames,
-	}
+		games: games,
+	}, nil
 }
 
 func (c *Client) Run() error {
@@ -85,15 +57,18 @@ func (c *Client) Run() error {
 
 		switch update.Message.Command() {
 		case "next":
-			c.handleNextCommand(&msg)
+			err := c.handleNextCommand(&msg)
+			if err != nil {
+				return fmt.Errorf("error handling next command: %w", err)
+			}
 		}
 	}
 
 	return nil
 }
 
-func (c *Client) handleNextCommand(msg *tgbotapi.MessageConfig) {
-	var game *Game
+func (c *Client) handleNextCommand(msg *tgbotapi.MessageConfig) error {
+	var game *games.Game
 	for _, g := range c.games {
 		if !time.Now().After(g.Date.Time) {
 			game = &g
@@ -104,10 +79,11 @@ func (c *Client) handleNextCommand(msg *tgbotapi.MessageConfig) {
 	if game == nil {
 		msg.Text = "No more games"
 		if _, err := c.bot.Send(msg); err != nil {
-			fmt.Println("Error sending message:", err)
+			return fmt.Errorf("error sending message: %w", err)
 		}
 
-		return
+		// TODO: something when it's over??
+		return nil
 	}
 
 	text := fmt.Sprintf("*%s* as *%s* | %s\n%s %s\n%s x %s\n%s",
@@ -125,6 +101,8 @@ func (c *Client) handleNextCommand(msg *tgbotapi.MessageConfig) {
 	msg.ParseMode = "markdown"
 
 	if _, err := c.bot.Send(msg); err != nil {
-		fmt.Println("Error sending message:", err)
+		return fmt.Errorf("error sending message: %w", err)
 	}
+
+	return nil
 }
