@@ -27,18 +27,7 @@ func (c *Client) handleNextCommand(msg *tgbotapi.MessageConfig) error {
 		return nil
 	}
 
-	text := fmt.Sprintf("*%s* as *%s* | %s\n%s %s\n%s x %s\n%s",
-		game.Date.Format("2/01"),
-		game.Date.Format("15:04"),
-		game.Place,
-		game.Stage,
-		game.Group,
-		game.Team1,
-		game.Team2,
-		game.Location,
-	)
-
-	msg.Text = text
+	msg.Text = game.String()
 	msg.ParseMode = "markdown"
 
 	if _, err := c.bot.Send(msg); err != nil {

@@ -1,65 +1,65 @@
-Date,Team 1,Match,Team 2,Group,Location,Stage,Place
-20-Nov-22 5:00 PM,Qatar,1,Ecuador,A,Al Bayt Stadium,Group,Casa do Papelao
-21-Nov-22 5:00 PM,Senegal,2,Netherlands,A,Al Thumama Stadium,Group,Casa do Papelao
-21-Nov-22 2:00 PM,England,3,Iran,B,Khalifa International Stadium,Group,Casa do Papelao
-21-Nov-22 8:00 PM,USA,4,Wales,B,Ahmad Bin Ali Stadium,Group,Casa do Papelao
-22-Nov-22 8:00 PM,France,5,Australia,D,Al Janoub Stadium,Group,Casa do Papelao
-22-Nov-22 2:00 PM,Denmark,6,Tunisia,D,Education City Stadium,Group,Casa do Papelao
-22-Nov-22 5:00 PM,Mexico,7,Poland,C,Stadium 974,Group,Casa do Papelao
-22-Nov-22 1:00 PM,Argentina,8,Saudi Arabia,C,Lusail Stadium,Group,Casa do Papelao
-23-Nov-22 8:00 PM,Belgium,9,Canada,F,Ahmad Bin Ali Stadium,Group,Casa do Papelao
-23-Nov-22 5:00 PM,Spain,10,Costa Rica,E,Al Thumama Stadium,Group,Casa do Papelao
-23-Nov-22 2:00 PM,Germany,11,Japan,E,Khalifa International Stadium,Group,Casa do Papelao
-23-Nov-22 1:00 PM,Morocco,12,Croatia,F,Al Bayt Stadium,Group,Casa do Papelao
-24-Nov-22 1:00 PM,Switzerland,13,Cameroon,G,Al Janoub Stadium,Group,Casa do Papelao
-24-Nov-22 2:00 PM,Uruguay,14,South Korea,H,Education City Stadium,Group,Casa do Papelao
-24-Nov-22 5:00 PM,Portugal,15,Ghana,H,Stadium 974,Group,Casa do Papelao
-24-Nov-22 8:00 PM,Brazil,16,Serbia,G,Lusail Stadium,Group,Casa do Papelao
-25-Nov-22 1:00 PM,Iran,17,Wales,B,Ahmad Bin Ali Stadium,Group,Casa do Papelao
-25-Nov-22 2:00 PM,Qatar,18,Senegal,A,Al Thumama Stadium,Group,Casa do Papelao
-25-Nov-22 5:00 PM,Netherlands,19,Ecuador,A,Khalifa International Stadium,Group,Casa do Papelao
-25-Nov-22 8:00 PM,England,20,USA,B,Al Bayt Stadium,Group,Casa do Papelao
-26-Nov-22 1:00 PM,Tunisia,21,Australia,D,Al Janoub Stadium,Group,Casa do Papelao
-26-Nov-22 2:00 PM,Poland,22,Saudi Arabia,C,Education City Stadium,Group,Casa do Papelao
-26-Nov-22 5:00 PM,France,23,Denmark,D,Stadium 974,Group,Casa do Papelao
-26-Nov-22 8:00 PM,Argentina,24,Mexico,C,Lusail Stadium,Group,Casa do Papelao
-27-Nov-22 1:00 PM,Japan,25,Costa Rica,E,Ahmad Bin Ali Stadium,Group,Casa do Papelao
-27-Nov-22 2:00 PM,Belgium,26,Morocco,F,Al Thumama Stadium,Group,Casa do Papelao
-27-Nov-22 5:00 PM,Croatia,27,Canada,F,Khalifa International Stadium,Group,Casa do Papelao
-27-Nov-22 8:00 PM,Spain,28,Germany,E,Al Bayt Stadium,Group,Casa do Papelao
-28-Nov-22 1:00 PM,Serbia,29,Cameroon,G,Al Janoub Stadium,Group,Casa do Papelao
-28-Nov-22 2:00 PM,South Korea,30,Ghana,H,Education City Stadium,Group,Casa do Papelao
-28-Nov-22 5:00 PM,Brazil,31,Switzerland,G,Stadium 974,Group,Casa do Papelao
-28-Nov-22 8:00 PM,Portugal,32,Uruguay,H,Lusail Stadium,Group,Casa do Papelao
-29-Nov-22 8:00 PM,England,33,Wales,B,Ahmad Bin Ali Stadium,Group,Casa do Papelao
-29-Nov-22 8:00 PM,Iran,34,USA,B,Al Thumama Stadium,Group,Casa do Papelao
-29-Nov-22 6:00 PM,Ecuador,35,Senegal,A,Khalifa International Stadium,Group,Casa do Papelao
-29-Nov-22 6:00 PM,Netherlands,36,Qatar,A,Al Bayt Stadium,Group,Casa do Papelao
-30-Nov-22 6:00 PM,Denmark,37,Australia,D,Al Janoub Stadium,Group,Casa do Papelao
-30-Nov-22 6:00 PM,Tunisia,38,France,D,Education City Stadium,Group,Casa do Papelao
-30-Nov-22 8:00 PM,Poland,39,Argentina,C,Stadium 974,Group,Casa do Papelao
-30-Nov-22 8:00 PM,Saudi Arabia,40,Mexico,C,Lusail Stadium,Group,Casa do Papelao
-1-Dec-22 6:00 PM,Croatia,41,Belgium,F,Ahmad Bin Ali Stadium,Group,Casa do Papelao
-1-Dec-22 6:00 PM,Canada,42,Morocco,F,Al Thumama Stadium,Group,Casa do Papelao
-1-Dec-22 8:00 PM,Japan,43,Spain,E,Khalifa International Stadium,Group,Casa do Papelao
-1-Dec-22 8:00 PM,Costa Rica,44,Germany,E,Al Bayt Stadium,Group,Casa do Papelao
-2-Dec-22 6:00 PM,Ghana,45,Uruguay,H,Al Janoub Stadium,Group,Casa do Papelao
-2-Dec-22 6:00 PM,South Korea,46,Portugal,H,Education City Stadium,Group,Casa do Papelao
-2-Dec-22 8:00 PM,Serbia,47,Switzerland,G,Stadium 974,Group,Casa do Papelao
-2-Dec-22 8:00 PM,Brazil,48,Cameroon,G,Lusail Stadium,Group,Casa do Papelao
-3-Dec-22 6:00 PM,1A,49,2B,,Khalifa International Stadium,Round of 16,Casa do Papelao
-3-Dec-22 8:00 PM,1C,50,2D,,Ahmad Bin Ali Stadium,Round of 16,Casa do Papelao
-4-Dec-22 8:00 PM,1B,51,2A,,Al Bayt Stadium,Round of 16,Casa do Papelao
-4-Dec-22 6:00 PM,1D,52,2C,,Al Thumama Stadium,Round of 16,Casa do Papelao
-5-Dec-22 6:00 PM,1E,53,2F,,Al Janoub Stadium,Round of 16,Casa do Papelao
-5-Dec-22 8:00 PM,1G,54,2H,,Stadium 974,Round of 16,Casa do Papelao
-6-Dec-22 6:00 PM,1F,55,2E,,Education City Stadium,Round of 16,Casa do Papelao
-6-Dec-22 8:00 PM,1H,56,2G,,Lusail Stadium,Round of 16,Casa do Papelao
-9-Dec-22 8:00 PM,W49,57,W50,,Lusail Stadium,Quarterfinals,Casa do Papelao
-9-Dec-22 6:00 PM,W53,58,W54,,Education City Stadium,Quarterfinals,Casa do Papelao
-10-Dec-22 8:00 PM,W51,59,W52,,Al Bayt Stadium,Quarterfinals,Casa do Papelao
-10-Dec-22 6:00 PM,W55,60,W56,,Al Thumama Stadium,Quarterfinals,Casa do Papelao
-13-Dec-22 8:00 PM,W57,61,W58,,Lusail Stadium,Semi Finals,Casa do Papelao
-14-Dec-22 8:00 PM,W59,62,W60,,Al Bayt Stadium,Semi Finals,Casa do Papelao
-17-Dec-22 6:00 PM,L61,63,L62,,Khalifa International Stadium,Finals,Casa do Papelao
-18-Dec-22 6:00 PM,W61,64,W62,,Lusail Stadium,Finals,Casa do Papelao
+Date,Team 1,Match,Team 2,Group,Location,Stage,Place,Goals Team 1, Goals Team 2, Winner
+20-Nov-22 5:00 PM,Qatar,1,Ecuador,A,Al Bayt Stadium,Group,Casa do Papelao,0,2,1
+21-Nov-22 5:00 PM,Senegal,2,Netherlands,A,Al Thumama Stadium,Group,Casa do Papelao,0,0,0
+21-Nov-22 2:00 PM,England,3,Iran,B,Khalifa International Stadium,Group,Casa do Papelao,0,0,0
+21-Nov-22 8:00 PM,USA,4,Wales,B,Ahmad Bin Ali Stadium,Group,Casa do Papelao,0,0,0
+22-Nov-22 8:00 PM,France,5,Australia,D,Al Janoub Stadium,Group,Casa do Papelao,0,0,0
+22-Nov-22 2:00 PM,Denmark,6,Tunisia,D,Education City Stadium,Group,Casa do Papelao,0,0,0
+22-Nov-22 5:00 PM,Mexico,7,Poland,C,Stadium 974,Group,Casa do Papelao,0,0,0
+22-Nov-22 1:00 PM,Argentina,8,Saudi Arabia,C,Lusail Stadium,Group,Casa do Papelao,0,0,0
+23-Nov-22 8:00 PM,Belgium,9,Canada,F,Ahmad Bin Ali Stadium,Group,Casa do Papelao,0,0,0
+23-Nov-22 5:00 PM,Spain,10,Costa Rica,E,Al Thumama Stadium,Group,Casa do Papelao,0,0,0
+23-Nov-22 2:00 PM,Germany,11,Japan,E,Khalifa International Stadium,Group,Casa do Papelao,0,0,0
+23-Nov-22 1:00 PM,Morocco,12,Croatia,F,Al Bayt Stadium,Group,Casa do Papelao,0,0,0
+24-Nov-22 1:00 PM,Switzerland,13,Cameroon,G,Al Janoub Stadium,Group,Casa do Papelao,0,0,0
+24-Nov-22 2:00 PM,Uruguay,14,South Korea,H,Education City Stadium,Group,Casa do Papelao,0,0,0
+24-Nov-22 5:00 PM,Portugal,15,Ghana,H,Stadium 974,Group,Casa do Papelao,0,0,0
+24-Nov-22 8:00 PM,Brazil,16,Serbia,G,Lusail Stadium,Group,Casa do Papelao,0,0,0
+25-Nov-22 1:00 PM,Iran,17,Wales,B,Ahmad Bin Ali Stadium,Group,Casa do Papelao,0,0,0
+25-Nov-22 2:00 PM,Qatar,18,Senegal,A,Al Thumama Stadium,Group,Casa do Papelao,0,0,0
+25-Nov-22 5:00 PM,Netherlands,19,Ecuador,A,Khalifa International Stadium,Group,Casa do Papelao,0,0,0
+25-Nov-22 8:00 PM,England,20,USA,B,Al Bayt Stadium,Group,Casa do Papelao,0,0,0
+26-Nov-22 1:00 PM,Tunisia,21,Australia,D,Al Janoub Stadium,Group,Casa do Papelao,0,0,0
+26-Nov-22 2:00 PM,Poland,22,Saudi Arabia,C,Education City Stadium,Group,Casa do Papelao,0,0,0
+26-Nov-22 5:00 PM,France,23,Denmark,D,Stadium 974,Group,Casa do Papelao,0,0,0
+26-Nov-22 8:00 PM,Argentina,24,Mexico,C,Lusail Stadium,Group,Casa do Papelao,0,0,0
+27-Nov-22 1:00 PM,Japan,25,Costa Rica,E,Ahmad Bin Ali Stadium,Group,Casa do Papelao,0,0,0
+27-Nov-22 2:00 PM,Belgium,26,Morocco,F,Al Thumama Stadium,Group,Casa do Papelao,0,0,0
+27-Nov-22 5:00 PM,Croatia,27,Canada,F,Khalifa International Stadium,Group,Casa do Papelao,0,0,0
+27-Nov-22 8:00 PM,Spain,28,Germany,E,Al Bayt Stadium,Group,Casa do Papelao,0,0,0
+28-Nov-22 1:00 PM,Serbia,29,Cameroon,G,Al Janoub Stadium,Group,Casa do Papelao,0,0,0
+28-Nov-22 2:00 PM,South Korea,30,Ghana,H,Education City Stadium,Group,Casa do Papelao,0,0,0
+28-Nov-22 5:00 PM,Brazil,31,Switzerland,G,Stadium 974,Group,Casa do Papelao,0,0,0
+28-Nov-22 8:00 PM,Portugal,32,Uruguay,H,Lusail Stadium,Group,Casa do Papelao,0,0,0
+29-Nov-22 8:00 PM,England,33,Wales,B,Ahmad Bin Ali Stadium,Group,Casa do Papelao,0,0,0
+29-Nov-22 8:00 PM,Iran,34,USA,B,Al Thumama Stadium,Group,Casa do Papelao,0,0,0
+29-Nov-22 6:00 PM,Ecuador,35,Senegal,A,Khalifa International Stadium,Group,Casa do Papelao,0,0,0
+29-Nov-22 6:00 PM,Netherlands,36,Qatar,A,Al Bayt Stadium,Group,Casa do Papelao,0,0,0
+30-Nov-22 6:00 PM,Denmark,37,Australia,D,Al Janoub Stadium,Group,Casa do Papelao,0,0,0
+30-Nov-22 6:00 PM,Tunisia,38,France,D,Education City Stadium,Group,Casa do Papelao,0,0,0
+30-Nov-22 8:00 PM,Poland,39,Argentina,C,Stadium 974,Group,Casa do Papelao,0,0,0
+30-Nov-22 8:00 PM,Saudi Arabia,40,Mexico,C,Lusail Stadium,Group,Casa do Papelao,0,0,0
+1-Dec-22 6:00 PM,Croatia,41,Belgium,F,Ahmad Bin Ali Stadium,Group,Casa do Papelao,0,0,0
+1-Dec-22 6:00 PM,Canada,42,Morocco,F,Al Thumama Stadium,Group,Casa do Papelao,0,0,0
+1-Dec-22 8:00 PM,Japan,43,Spain,E,Khalifa International Stadium,Group,Casa do Papelao,0,0,0
+1-Dec-22 8:00 PM,Costa Rica,44,Germany,E,Al Bayt Stadium,Group,Casa do Papelao,0,0,0
+2-Dec-22 6:00 PM,Ghana,45,Uruguay,H,Al Janoub Stadium,Group,Casa do Papelao,0,0,0
+2-Dec-22 6:00 PM,South Korea,46,Portugal,H,Education City Stadium,Group,Casa do Papelao,0,0,0
+2-Dec-22 8:00 PM,Serbia,47,Switzerland,G,Stadium 974,Group,Casa do Papelao,0,0,0
+2-Dec-22 8:00 PM,Brazil,48,Cameroon,G,Lusail Stadium,Group,Casa do Papelao,0,0,0
+3-Dec-22 6:00 PM,1A,49,2B,,Khalifa International Stadium,Round of 16,Casa do Papelao,0,0,0
+3-Dec-22 8:00 PM,1C,50,2D,,Ahmad Bin Ali Stadium,Round of 16,Casa do Papelao,0,0,0
+4-Dec-22 8:00 PM,1B,51,2A,,Al Bayt Stadium,Round of 16,Casa do Papelao,0,0,0
+4-Dec-22 6:00 PM,1D,52,2C,,Al Thumama Stadium,Round of 16,Casa do Papelao,0,0,0
+5-Dec-22 6:00 PM,1E,53,2F,,Al Janoub Stadium,Round of 16,Casa do Papelao,0,0,0
+5-Dec-22 8:00 PM,1G,54,2H,,Stadium 974,Round of 16,Casa do Papelao,0,0,0
+6-Dec-22 6:00 PM,1F,55,2E,,Education City Stadium,Round of 16,Casa do Papelao,0,0,0
+6-Dec-22 8:00 PM,1H,56,2G,,Lusail Stadium,Round of 16,Casa do Papelao,0,0,0
+9-Dec-22 8:00 PM,W49,57,W50,,Lusail Stadium,Quarterfinals,Casa do Papelao,0,0,0
+9-Dec-22 6:00 PM,W53,58,W54,,Education City Stadium,Quarterfinals,Casa do Papelao,0,0,0
+10-Dec-22 8:00 PM,W51,59,W52,,Al Bayt Stadium,Quarterfinals,Casa do Papelao,0,0,0
+10-Dec-22 6:00 PM,W55,60,W56,,Al Thumama Stadium,Quarterfinals,Casa do Papelao,0,0,0
+13-Dec-22 8:00 PM,W57,61,W58,,Lusail Stadium,Semi Finals,Casa do Papelao,0,0,0
+14-Dec-22 8:00 PM,W59,62,W60,,Al Bayt Stadium,Semi Finals,Casa do Papelao,0,0,0
+17-Dec-22 6:00 PM,L61,63,L62,,Khalifa International Stadium,Finals,Casa do Papelao,0,0,0
+18-Dec-22 6:00 PM,W61,64,W62,,Lusail Stadium,Finals,Casa do Papelao,0,0,0
