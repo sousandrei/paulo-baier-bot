@@ -8,7 +8,7 @@ import (
 )
 
 type Config struct {
-	TelegramToken string
+	TelegramToken string `envconfig:"TELEGRAM_TOKEN"`
 }
 
 func main() {

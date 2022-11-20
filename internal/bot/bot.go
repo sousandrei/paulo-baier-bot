@@ -2,6 +2,7 @@ package bot
 
 import (
 	"fmt"
+	"time"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"github.com/sousandrei/paulobaierbot/internal/games"
@@ -56,7 +57,39 @@ func (c *Client) Run() error {
 			if err != nil {
 				return fmt.Errorf("error handling next command: %w", err)
 			}
+
+		case "today":
+			today := time.Now().Format("2/01")
+			err := c.handleDayCommand(&msg, today)
+			if err != nil {
+				return fmt.Errorf("error handling day command: %w", err)
+			}
+
+		case "day":
+			txt := update.Message.CommandArguments()
+			day, err := time.Parse("2/01", txt)
+			if err != nil {
+				msg.Text = "Invalid date format. Use dd/mm"
+				if _, err := c.bot.Send(msg); err != nil {
+					return fmt.Errorf("error sending message: %w", err)
+				}
+
+				continue
+			}
+			err = c.handleDayCommand(&msg, day.Format("2/01"))
+			if err != nil {
+				return fmt.Errorf("error handling day command: %w", err)
+			}
+
+		case "team":
+			txt := update.Message.CommandArguments()
+			err := c.handleSearchTeamCommand(&msg, txt)
+			if err != nil {
+				return fmt.Errorf("error handling search command: %w", err)
+			}
+
 		}
+
 	}
 
 	return nil
