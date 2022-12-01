@@ -16,19 +16,16 @@ type Game struct {
 	Group      string   `csv:"Group"`
 	Location   string   `csv:"Location"`
 	Stage      string   `csv:"Stage"`
-	Place      string   `csv:"Place"`
 	GoalsTeam1 int      `csv:"Goals Team 1"`
 	GoalsTeam2 int      `csv:"Goals Team 2"`
-	Winner     int      `csv:"Winner"`
 }
 
 func (g *Game) String() string {
 	if time.Now().After(g.Date.Time) {
 		return fmt.Sprintf(
-			"*%s* as *%s* | %s\n%s %s\n%s %dx%d %s\n%s\n\n",
+			"*%s* as *%s*\n%s %s\n%s %dx%d %s\n%s\n\n",
 			g.Date.Format("2/01"),
 			g.Date.Format("15:04"),
-			g.Place,
 			g.Stage,
 			g.Group,
 			g.Team1,
@@ -40,10 +37,9 @@ func (g *Game) String() string {
 	}
 
 	return fmt.Sprintf(
-		"*%s* as *%s* | %s\n%s %s\n%s x %s\n%s\n\n",
+		"*%s* as *%s*\n%s %s\n%s x %s\n%s\n\n",
 		g.Date.Format("2/01"),
 		g.Date.Format("15:04"),
-		g.Place,
 		g.Stage,
 		g.Group,
 		g.Team1,
